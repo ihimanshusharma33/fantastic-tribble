@@ -4,6 +4,7 @@ import { Provider } from 'react-redux';
 import { store } from './store/store';
 import Navigation from './components/Navigation';
 import Stimulate from './pages/Stimulate';
+import PortfolioConfig from './pages/PortfolioManage';
 
 // Lazy load pages
 const Dashboard = React.lazy(() => import('./pages/Dashboard'));
@@ -37,6 +38,8 @@ function App() {
                 <Route path="/contact" element={<Contact />} />
                 <Route path='/stimulate' element={<Stimulate />} />
                 <Route path="/dashboard" element={<Dashboard />} />
+                <Route path="/portfolioconfig" element={<PortfolioConfig />} />
+                <Route path="*" element={<h1>404 Not Found</h1>} />
               </Routes>
             </React.Suspense>
           </main>

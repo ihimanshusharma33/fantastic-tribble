@@ -15,39 +15,39 @@ const Stimulate: React.FC = () => {
       <p className="text-gray-400">Test your trading strategies with our advanced simulation engine</p>
       
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-6">
-        <div className="bg-gray-100 p-4 rounded-lg">
+        <div className="bg-gray-50 p-4 rounded-lg">
           <h2 className="text-lg font-medium text-gray-900">Buy Trigger <span className="text-green-600">&rarr;</span></h2>
-          <input
-            type="text"
+          <textarea
             value={buyTrigger}
             onChange={(e) => setBuyTrigger(e.target.value)}
             className="w-full bg-white border border-gray-300 text-gray-900 px-3 py-2 rounded-md mt-2"
             placeholder="Enter buy trigger conditions..."
+            rows={4}
           />
         </div>
-        <div className="bg-gray-100 p-4 rounded-lg">
+        <div className="bg-gray-50 p-4 rounded-lg">
           <h2 className="text-lg font-medium text-gray-900">Sell Trigger <span className="text-red-600">&rarr;</span></h2>
-          <input
-            type="text"
+          <textarea
             value={sellTrigger}
             onChange={(e) => setSellTrigger(e.target.value)}
             className="w-full bg-white border border-gray-300 text-gray-900 px-3 py-2 rounded-md mt-2"
             placeholder="Enter sell trigger conditions..."
+            rows={4}
           />
         </div>
-        <div className="bg-gray-100 p-4 rounded-lg">
+        <div className="bg-gray-50 p-4 rounded-lg">
           <h2 className="text-lg font-medium text-gray-900">Portfolio Management <span className="text-blue-600">&rarr;</span></h2>
-          <input
-            type="text"
+          <textarea
             value={portfolioManagement}
             onChange={(e) => setPortfolioManagement(e.target.value)}
             className="w-full bg-white border border-gray-300 text-gray-900 px-3 py-2 rounded-md mt-2"
             placeholder="Enter portfolio management rules..."
+            rows={4}
           />
         </div>
       </div>
       
-      <div className="mt-6 p-4 bg-gray-100 rounded-lg">
+      <div className="mt-6 p-4 bg-gray-50 rounded-lg">
         <h2 className="text-lg font-medium">Simulation Settings</h2>
         <p className="text-gray-400">Configure your simulation parameters</p>
         <div className="mt-4 flex items-center gap-4">
@@ -64,16 +64,16 @@ const Stimulate: React.FC = () => {
         </div>
       </div>
       
-      <div className="mt-6 p-4 bg-gray-100 rounded-lg">
+      <div className="mt-6 p-4 bg-gray-50 rounded-lg">
         <h2 className="text-lg font-medium flex items-center gap-2">
           ⏳ Simulation Summary
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
-          <div className="bg-gray-100 p-4 rounded-lg">
+          <div className="bg-gray-50 p-4 rounded-lg">
             <h3 className="text-md font-medium">Performance Metrics</h3>
             <p className="text-gray-400">Stats and graphs will appear here after simulation</p>
           </div>
-          <div className="bg-gray-100 p-4 rounded-lg">
+          <div className="bg-gray-50 p-4 rounded-lg">
             <h3 className="text-md font-medium">Simulation Orders</h3>
             <p className="text-gray-400">Trading orders will appear here after simulation</p>
           </div>

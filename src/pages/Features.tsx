@@ -25,7 +25,7 @@ const Features: React.FC = () => {
 
   const features = [
     { label: 'Screening Rules', link: '/create' },
-    { label: 'Portfolio Management', link: '/portfolio-management' },
+    { label: 'Portfolio Management', link: '/portfolioconfig' },
     { label: 'Buy Triggers Rules', link: '/buy-triggers-rules' },
     { label: 'Sell Triggers Rules', link: '/sell-triggers-rules' },
     { label: 'Simulate', link: '/stimulate' },
